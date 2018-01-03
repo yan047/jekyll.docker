@@ -1,5 +1,5 @@
-# Version: 1.0
-# NAME: jekyll3.3
+# Version: 3.6.2
+# NAME: jekyll
 FROM ubuntu:16.04
 
 MAINTAINER "boyan.au@gmail.com"
@@ -15,7 +15,7 @@ RUN apt-get update && \
 	apt-get -y install ruby ruby-dev make gcc wget unzip curl git vim && \
 	apt-get clean
 
-RUN yes | gem install jekyll -v3.3.1 && \
+RUN yes | gem install jekyll -v3.6.2 && \
 	yes | gem install bundler
 
 RUN mkdir -p $WORK_BASE
